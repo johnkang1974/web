@@ -1,0 +1,41 @@
+.navpadding {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.page-content {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+
+ul.social {
+    /*margin: 50px auto;*/
+    /*padding: 50px;*/
+    width: 100%;
+    text-align: center;
+}
+
+ul.social > li {
+    display: inline-block;
+    padding: 2px;
+}
+
+ul.social > li >a{
+    display: inline-block;
+    padding: 0;
+    width: 43px;
+    margin:0 13px 13px 0;
+    line-height: 43px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+footer{
+    margin-top: 50px;
+}
+
+.copyright{
+    text-align: center;
+}
+

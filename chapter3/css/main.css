@@ -1,0 +1,118 @@
+body {
+}
+
+.my-logo {
+    width: 120px;
+}
+
+.my-navbar-toggler{
+    padding: 0.25rem 0.25rem;
+}
+
+.image-logo {
+    width: 100%;
+    height: 100%;
+}
+
+.my-container{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.my-col {
+    margin-bottom: 20px;
+}
+
+.company-view-image {
+    width: 100%;
+}
+
+.my-card{
+    margin-bottom: 20px;
+    box-shadow: #dddddd 4px 4px 3px ;
+}
+
+.my-card-fixed-height{
+    height: auto;
+}
+
+.my-card-p {
+    margin-right: 20%;
+}
+
+.my-cartoon {
+    background: url("../img/bg-01.png") bottom right no-repeat;
+    background-size:200px;
+}
+.my-movie {
+    background: url("../img/bg-02.png") bottom right no-repeat;
+    background-size:200px;
+}
+
+.my-motion {
+    background: url("../img/bg-03.png") bottom right no-repeat;
+    background-size:200px;
+}
+
+.my-game {
+    background: url("../img/bg-04.png") bottom right no-repeat;
+    background-size:200px;
+}
+
+@media (min-width: 780px) {
+    .my-card-fixed-height{
+        height: 350px;
+    }
+
+    .my-card-p {
+        /*padding-top: 15px;*/
+        margin-right: 33%;
+    }
+
+    .my-cartoon {
+        background: url("../img/bg-01.png") top right no-repeat;
+    }
+
+    .my-movie {
+        background: url("../img/bg-02.png") top right no-repeat;
+    }
+
+    .my-motion {
+        background: url("../img/bg-03.png") top right no-repeat;
+    }
+
+    .my-game {
+        background: url("../img/bg-04.png") top right no-repeat;
+    }
+}
+
+.my-foot-container{
+    padding: 20px;
+}
+
+ul.social {
+    margin: 0 auto;
+    width: 100%;
+    text-align: right;
+}
+
+ul.social > li {
+    display: inline-block;
+    padding: 2px;
+}
+
+ul.social > li >a{
+    display: inline-block;
+    padding: 5px;
+    color: #ffffff;
+}
+
+.my-beian >a {
+    color:#6c757d ;
+}
+
+.my-beian >a:hover {
+    color: whitesmoke ;
+    text-decoration: none;
+}
+

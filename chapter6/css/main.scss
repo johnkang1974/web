@@ -1,0 +1,271 @@
+$menu-hover-bg: rgb(119, 119, 119);
+$menu-active-bg: rgb(59, 59, 59);
+$menu-border-color: #aeaeae;
+$welcome-bg: #191919;
+
+$screen-sm-max: 991px;
+$screen-sm-min: 768px;
+
+h1, h2, h3, h4, h5, p, a, span {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+.my-navbar {
+  margin: 0;
+  padding: 0;
+  border: solid $menu-border-color 0 0 1px 0;
+}
+
+#navmenu {
+  li:active {
+    background-color: red;
+  }
+}
+
+.my-nav-link {
+  padding: 20px;
+}
+
+.my-nav-item {
+  a {
+    text-transform: uppercase;
+  }
+  &:visited {
+    background: $menu-active-bg;
+  }
+  &:hover {
+    background: $menu-hover-bg;
+    a {
+      color: white !important;
+    }
+  }
+
+}
+
+.my-navbar-toggle {
+  border: none;
+}
+
+#welcome {
+  border-radius: 0;
+  background-size: cover;
+  height: 300px;
+  color: white;
+  background: $welcome-bg;
+  > .container {
+    position: relative;
+    .welcome-message {
+      position: absolute;
+      //left: 0;
+      //right: 0;
+      //top: 0;
+      //bottom: 0;
+      padding: 30px 40px;
+      background-color: hsla(0, 0, 1%, 0.4);
+      .btn {
+        margin-top: 16px;
+      }
+
+      strong {
+        display: block;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  @media (max-width: $screen-sm-max) {
+    background: url("../img/subway-906x600.jpg") center center no-repeat;
+
+    .welcome-message {
+      h1 {
+        font-size: 20px;
+      }
+    }
+  }
+  @media(min-width: $screen-sm-min) {
+    height: 480px;
+    .welcome-message {
+      h1 {
+        font-size: 30px;
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    height: 540px;
+    background: url("../img/photo-by-josh-howard-subway-1600x1060.jpg") center center no-repeat;
+    .welcome-message {
+      h1 {
+        font-size: 63px;
+      }
+    }
+  }
+}
+
+#features {
+  h1, h2, h3, h4, h5 {
+    color: $menu-hover-bg;
+  }
+  color: $menu-active-bg;
+  .my-feature-item {
+    text-align: center;
+
+  }
+  i, h2 {
+    margin-top: 10px;
+  }
+  h2 {
+    text-transform: uppercase;
+  }
+
+}
+
+#impact {
+  h1, h2, h3, h4, h5 {
+    color: $menu-hover-bg;
+  }
+  margin-top: 2rem;
+  .reviews {
+    position: relative;
+    .img-thumbnail {
+      border: none;
+    }
+    .hreviews {
+      padding-top: 0;
+      height: auto;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    .caption {
+
+    }
+
+  }
+  .description {
+    position: absolute;
+    background-color: hsla(0, 0, 1%, 0.4);
+    padding: 10px;
+    color: whitesmoke;
+    max-height: 100%;
+    overflow: hidden;
+    > p {
+      padding: 10px 10px;
+      margin-bottom: 0;
+    }
+    small {
+      float: right;
+      color: $menu-border-color;
+    }
+  }
+  @media (min-width: 415px) {
+    .card-special {
+      display: none;
+    }
+  }
+
+  .card1 {
+    left: 0;
+    top: 0;
+    width: 80%;
+  }
+  .card2 {
+    left: 0;
+    top: 0;
+    width: 30%;
+  }
+  .card3 {
+    left: 0;
+    bottom: 0;
+    width: 80%;
+  }
+  .card4 {
+    right: 0;
+    top: 0;
+    width: 70%;
+  }
+  .card5 {
+    bottom: 0;
+    left: 0;
+    width: 70%;
+  }
+  .card6 {
+    bottom: 0;
+    left: 0;
+  }
+}
+
+#price {
+  .m-button {
+    display: block;
+    border-radius: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  margin: 2rem auto;
+  h1 {
+    color: $menu-hover-bg;
+  }
+
+  .plan {
+    h3 {
+      text-align: center;
+      color: whitesmoke;
+    }
+    span {
+      color: whitesmoke;
+    }
+    .display-half {
+      font-size: 0.5em;
+      vertical-align: super;
+    }
+  }
+  .m-card-basic {
+    margin: 2rem -3.6rem 2rem 3.6rem;
+    .plan-basic {
+      padding-right: 3.6rem;
+      padding-left: 0;
+      thead {
+        background-color: darkturquoise;
+      }
+      th {
+        padding: 0rem auto;
+      }
+    }
+  }
+  .m-card-premium {
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+    .plan-premium {
+      thead {
+        background-color: orangered;
+      }
+      th {
+        padding: 0rem auto;
+      }
+    }
+  }
+
+  .m-card-pro {
+    margin: 2rem 3.6rem 2rem -3.6rem;
+    .plan-pro {
+      padding-left: 3.6rem;
+      padding-right: 0;
+      thead {
+        background-color: green;
+      }
+      th {
+        padding: 0rem auto;
+      }
+    }
+  }
+}
+
+

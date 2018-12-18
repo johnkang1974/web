@@ -1,0 +1,56 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+html {
+  //font-size: 20px;
+}
+body{
+  margin-bottom: 5rem;
+}
+
+
+.m-left-div {
+  height: 15rem;
+  background-color: red;
+}
+
+.m-right-div {
+  height: 15rem;
+  background-color: deepskyblue;
+}
+
+@media (min-width: 576px) {
+  .m-left-div {
+    background-color: black;
+    z-index: 1060;
+  }
+}
+
+.m-row {
+  height: 5rem;
+  margin-top: 1rem;
+  div {
+    //height: 5rem;
+    border: 1px solid #dee2e6;
+    background-color: whitesmoke;
+  }
+}
+
+.my-media{
+  div {
+    border: 1px solid #dee2e6;
+    background-color: whitesmoke;
+  }
+}
+
+
+h1{
+  margin-top: 5rem;
+}
+
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 3;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 4;
+  }
+}

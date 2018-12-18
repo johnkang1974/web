@@ -1,0 +1,28 @@
+
+body {
+    background: #343434;
+    padding-top: 30px;
+    min-width: 1200px;
+}
+
+.main-content {
+    width: 100%;
+    background: red;
+    /*display: table;*/
+}
+
+.main-content-title {
+    width: 200px;
+    padding: 20px 20px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.main-content-title h1 {
+    text-align: right;
+}
+
+.main-content_des {
+    display: table-cell;
+    vertical-align: middle;
+}

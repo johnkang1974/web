@@ -1,0 +1,27 @@
+.myjumbotron{
+    padding: 0;
+    margin-bottom: 0;
+}
+
+
+
+.jumbotron-image{
+    width: 100%;
+    height: 100%;
+}
+
+.mynavbar{
+    border-radius: 0;
+}
+
+.navbar-nav{
+    float: right;
+}
+.gateimage {
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    /*background:url("../image/timg.jpg") no-repeat top center fixed;*/
+    /*background-attachment: fixed;*/
+
+}
